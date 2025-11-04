@@ -1,79 +1,84 @@
 # Trauma Training Meta-Analysis
 
-This repository contains an R script for conducting a meta-analysis of trauma life support training outcomes using the **metafor** package. The analysis compares pre- and post-training mortality outcomes across multiple studies using a random-effects model.
+This repository contains R scripts for conducting a meta-analysis of trauma life support training outcomes using the **metafor** package. It includes both overall meta-analysis and subgroup/sensitivity analyses.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 trauma_training_meta_analysis/
-├── meta_analysis_script.R       # Main R script
-├── meta_analysis_dummy_data.csv               # Example dataset (dummy version of the real data)
+├── meta_analysis_script.R       # Main meta-analysis script
+├── meta_analysis_dummy_data.csv # Example dataset for meta-analysis (dummy version)
+├── forest_plot_subgroups.R      # Script for subgroup/sensitivity forest plots
+├── subgroups_dummy_data.csv     # Example dataset for subgroup analysis
 ├── README.md                    # Project documentation
-└── LICENSE                      # License file (suggested: MIT)
+└── LICENSE                      # MIT License
 ```
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
-* **R version:** ≥ 4.0
-* **Packages:**
+* R version ≥ 4.0
+* Package:
 
-  ```R
-  install.packages("metafor")
-  ```
+```R
+install.packages("metafor")
+```
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone this repository:
 
-   ```bash
-   git clone https://github.com/MistyGlacier/trauma_training_meta_analysis.git
-   cd trauma_training_meta_analysis
-   ```
+```bash
+git clone https://github.com/MistyGlacier/trauma_training_meta_analysis.git
+cd trauma_training_meta_analysis
+```
 
-2. Open `meta_analysis_script.R` in R or RStudio.
+2. Open the desired script in R or RStudio:
 
-3. Replace the file path in `read.csv()` with your actual dataset path if using real data.
+   * `meta_analysis_script.R` for overall meta-analysis
+   * `forest_plot_subgroups.R` for subgroup/sensitivity analysis
 
-4. Run the script — it will:
+3. Ensure the CSV file paths match your local setup.
 
-   * Import data
-   * Calculate effect sizes (Odds Ratios) and variances
-   * Pool results using a Random Effects Model (REML)
-   * Output summary statistics and confidence intervals
-   * Generate a **forest plot** and **funnel plot**
-   * Perform **Egger’s regression**, **Rank correlation test**, and **Sensitivity analysis** (Leave-one-out and Influence diagnostics)
+4. Run the script:
 
----
+   * `meta_analysis_script.R` will:
 
-## 📊 Example Output
+     * Import data
+     * Calculate effect sizes (Odds Ratios) and variances
+     * Pool results using a Random Effects Model (REML)
+     * Output summary statistics and confidence intervals
+     * Generate forest and funnel plots
+     * Perform Egger’s regression, Rank correlation test, and sensitivity analyses (Leave-one-out and Influence diagnostics)
+   * `forest_plot_subgroups.R` will:
 
-* **Forest plot**: Displays individual study odds ratios and pooled estimate.
-* **Funnel plot**: Visualizes publication bias.
-* **Statistical outputs**:
-
-  * Pooled OR, 95% CI, heterogeneity statistics (Q, I²)
-  * Egger’s test and Rank correlation test results
-  * Sensitivity analysis summaries
+     * Import subgroup/sensitivity data
+     * Generate a forest plot with headings, separators, and Overall effect diamond
 
 ---
 
-## 🧪 Dummy Data
+## Example Output
 
-A dummy dataset (`meta_analysis_dummy_data.csv`) is included for demonstration purposes:
+* Meta-analysis: forest plot, funnel plot, pooled OR, heterogeneity statistics (Q, I²), Egger’s test, Rank correlation test, sensitivity analyses.
+* Subgroup analysis: forest plot for training programmes, outcome definitions, and country income levels with Overall effect.
 
 ---
 
-## 📘 License
+## Dummy Data
 
-This project is licensed under the **MIT License**, which allows academic and non-commercial use, modification, and distribution.
+* `meta_analysis_dummy_data.csv` – example data for meta-analysis.
+* `subgroups_dummy_data.csv` – example data for subgroup/sensitivity forest plots.
 
-**Suggested License Text (MIT):**
+---
+
+## License
+
+This project is licensed under the MIT License.
 
 ```
 MIT License
@@ -101,6 +106,6 @@ SOFTWARE.
 
 ---
 
-## ✉️ Contact
+## Contact
 
 If you have questions or wish to discuss this project, feel free to reach out to me.
