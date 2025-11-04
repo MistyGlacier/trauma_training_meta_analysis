@@ -32,7 +32,7 @@ trauma_training_meta_analysis/
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/<your-username>/trauma_training_meta_analysis.git
+   git clone https://github.com/MistyGlacier/trauma_training_meta_analysis.git
    cd trauma_training_meta_analysis
    ```
 
@@ -66,18 +66,6 @@ trauma_training_meta_analysis/
 ## 🧪 Dummy Data
 
 A dummy dataset (`dummy_data.csv`) is included for demonstration purposes:
-
-```csv
-Author,Year,post_population,post_mortality,pre_population,pre_mortality
-Jane Doe et al,2015,80,15,75,20
-Smith et al,2017,300,90,290,110
-Lee et al,2018,120,25,100,30
-Patel et al,2019,450,70,470,85
-Brown et al,2020,600,45,580,60
-Nguyen et al,2021,90,8,100,12
-Kim et al,2022,200,25,220,30
-Garcia et al,2023,500,55,480,65
-```
 
 ---
 
@@ -115,4 +103,4 @@ SOFTWARE.
 
 ## ✉️ Contact
 
-If you have questions or wish to discuss this project, feel free to reach out or reference the repository link in your academic materials (e.g., Statement of Purpose).
+If you have questions or wish to discuss this project, feel free to reach out to me.
