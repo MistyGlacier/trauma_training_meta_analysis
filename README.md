@@ -9,7 +9,7 @@ This repository contains an R script for conducting a meta-analysis of trauma li
 ```
 trauma_training_meta_analysis/
 ├── meta_analysis_script.R       # Main R script
-├── dummy_data.csv               # Example dataset (dummy version of the real data)
+├── meta_analysis_dummy_data.csv               # Example dataset (dummy version of the real data)
 ├── README.md                    # Project documentation
 └── LICENSE                      # License file (suggested: MIT)
 ```
@@ -65,7 +65,7 @@ trauma_training_meta_analysis/
 
 ## 🧪 Dummy Data
 
-A dummy dataset (`dummy_data.csv`) is included for demonstration purposes:
+A dummy dataset (`meta_analysis_dummy_data.csv`) is included for demonstration purposes:
 
 ---
 
