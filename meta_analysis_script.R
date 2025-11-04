@@ -7,7 +7,7 @@
 library(metafor)
 
 # Import CSV file with data. Change the line below to your file path.
-data <- read.csv("C:\\Users\\User\\Documents\\MetaAnalysis\\dummy_data.csv") 
+data <- read.csv("C:\\Users\\User\\Documents\\MetaAnalysis\\meta_analysis_dummy_data.csv") 
 
 # --- Meta-analysis ---
 
